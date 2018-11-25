@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3a3f47"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".22"
+        android:text="SCROLL/SELECT COLORS"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".005"
+        android:background="#ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/listview"
+       android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:dividerHeight="10.0dp"
+     >
+
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".005"
+        android:background="#ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:text="Carousel Speed"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:orientation="horizontal"
+     android:layout_weight=".3"
+     android:gravity="center_vertical">
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:textColor="#ffffff"
+         android:textAlignment="center"
+         android:text="slow"
+         />
+
+     <SeekBar
+         android:id="@+id/dialogseekbar"
+         android:layout_width="0dp"
+         android:layout_weight="4"
+         android:layout_height="wrap_content"
+         android:progress="2"
+         android:max="6"/>
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:textColor="#ffffff"
+         android:textAlignment="center"
+         android:text="fast"
+         />
+
+
+
+ </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".005"
+        android:background="#ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/dialogbutton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="Start" />
+</LinearLayout>
